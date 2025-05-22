@@ -40,12 +40,6 @@ const PetVetVisits = () => {
     <div className="p-6 bg-white rounded-2xl shadow-xl">
       <h2 className="text-2xl font-semibold mb-4">Veterinary Visits</h2>
       <div className="flex flex-col md:flex-row gap-4 mb-4">
-        <input
-          type="date"
-          value={visitDate}
-          onChange={(e) => setVisitDate(e.target.value)}
-          className="flex-grow px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-black transition"
-        />
         <select
           value={visitReason}
           onChange={(e) => setVisitReason(e.target.value)}
@@ -68,6 +62,12 @@ const PetVetVisits = () => {
             className="flex-grow px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-black transition"
           />
         )}
+        <input
+          type="date"
+          value={visitDate}
+          onChange={(e) => setVisitDate(e.target.value)}
+          className="flex-grow px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-black transition"
+        />
         <button
           onClick={addVisit}
           className="w-full md:w-auto px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"

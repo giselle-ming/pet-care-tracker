@@ -51,7 +51,7 @@ const App = () => {
                 : "bg-white text-black hover:bg-gray-200"
             }`}
           >
-            profile
+            Profile
           </button>
           <button
             onClick={() => setCurrentPage("weight")}
@@ -61,7 +61,7 @@ const App = () => {
                 : "bg-white text-black hover:bg-gray-200"
             }`}
           >
-            weight
+            Weight
           </button>
           <button
             onClick={() => setCurrentPage("visits")}
@@ -71,7 +71,7 @@ const App = () => {
                 : "bg-white text-black hover:bg-gray-200"
             }`}
           >
-            visits
+            Visits
           </button>
           <button
             onClick={() => setCurrentPage("vaccines")}
@@ -81,7 +81,7 @@ const App = () => {
                 : "bg-white text-black hover:bg-gray-200"
             }`}
           >
-            vaccines
+            Vaccines
           </button>
           <button
             onClick={() => setCurrentPage("medicine")}
@@ -91,7 +91,7 @@ const App = () => {
                 : "bg-white text-black hover:bg-gray-200"
             }`}
           >
-            medicine
+            Medicine
           </button>
         </div>
         {renderPage()}
